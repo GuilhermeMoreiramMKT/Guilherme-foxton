@@ -1,0 +1,12 @@
+.daily-offers { margin-top: 42px; }
+.daily-offers h3 { font-size: clamp(1.5rem, 4vw, 2.3rem); margin: 0; }
+.daily-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.daily-controls { display: flex; gap: 8px; }
+.daily-controls button { min-width: 44px; min-height: 44px; cursor: pointer; border-radius: 50%; border: 1px solid currentColor; background: transparent; color: inherit; }
+.daily-track { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 36px) / 3); gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 8px 3px 16px; }
+.daily-card { display: grid; align-content: start; gap: 8px; color: inherit; scroll-snap-align: start; }
+.daily-card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: #eae8e1; }
+.daily-card s { opacity: .65; }
+.daily-status { margin: 8px 0; }
+@media (max-width: 660px) { .daily-track { grid-auto-columns: 72%; gap: 12px; } }
+@media (prefers-reduced-motion: reduce) { .daily-track { scroll-behavior: auto; } }
