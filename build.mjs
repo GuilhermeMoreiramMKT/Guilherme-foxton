@@ -11,11 +11,11 @@ const sorts=SEARCH_SORTS.map(o=>'<label class="facet-option"><input type="radio"
 const priceLabel=value=>Number(value).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
 const dashboard=fs.readFileSync('dashboard.html','utf8').replace('SEARCH_FILTER_GROUPS',groups).replace('SEARCH_SORT_OPTIONS',sorts).replaceAll('PRICE_MIN_LABEL',priceLabel(PRICE_LIMITS.min)).replaceAll('PRICE_MAX_LABEL',priceLabel(PRICE_LIMITS.max)).replaceAll('PRICE_MIN',String(PRICE_LIMITS.min)).replaceAll('PRICE_MAX',String(PRICE_LIMITS.max));
 const dashboardScript=fs.readFileSync('filter-catalog.js','utf8').replace(/^export /gm,'')+'\n'+fs.readFileSync('search.js','utf8').replace(/^import .*;$/gm,'').replace(/^export /gm,'')+'\n'+fs.readFileSync('dashboard.js','utf8');
-let page=fs.readFileSync('page.html','utf8').replace('SEARCH_DASHBOARD',dashboard).replace('</style>',fs.readFileSync('motion.css','utf8')+'\n'+fs.readFileSync('dashboard.css','utf8')+'\n</style>').replace('</script></body>',dashboardScript+'\n'+fs.readFileSync('motion.js','utf8')+'\n</script></body>').replace('HERO_IMAGE',looks[0].main.image).replace('LOOKS_DATA',JSON.stringify(looks).replaceAll('<','\\u003c')).replace('YEAR',String(new Date().getFullYear()));
+let page=fs.readFileSync('page.html','utf8').replace('SEARCH_DASHBOARD',dashboard).replace('</style>',fs.readFileSync('motion.css','utf8')+'\n'+fs.readFileSync('dashboard.css','utf8')+'\n'+fs.readFileSync('daily-carousel.css','utf8')+'\n</style>').replace('</script></body>',dashboardScript+'\n'+fs.readFileSync('motion.js','utf8')+'\n'+fs.readFileSync('daily-carousel.js','utf8')+'\n</script></body>').replace('HERO_IMAGE',looks[0].main.image).replace('LOOKS_DATA',JSON.stringify(looks).replaceAll('<','\\u003c')).replace('YEAR',String(new Date().getFullYear()));
 for(const [name,svg] of Object.entries(icons))page=page.replaceAll('ICON_'+name,svg);
 fs.mkdirSync('dist/server',{recursive:true});
 const portrait=fs.readFileSync('assets/guilherme-moreira-v1.jpg.base64','utf8').trim();
-fs.writeFileSync('dist/server/index.js','const PORTRAIT_BASE64='+JSON.stringify(portrait)+';\nconst PAGE='+JSON.stringify(page)+';\n'+fs.readFileSync('worker.js','utf8'));
+fs.writeFileSync('dist/server/index.js','const PORTRAIT_BASE64='+JSON.stringify(portrait)+';\nconst PAGE='+JSON.stringify(page)+';\n'+fs.readFileSync('daily-offers.js','utf8').replace(/^export /gm,'')+'\n'+fs.readFileSync('worker.js','utf8').replace(/^import .*;$/gm,''));
 fs.writeFileSync('dist/index.html',page);
 fs.mkdirSync('dist/public/assets',{recursive:true});
 fs.writeFileSync('dist/public/index.html',page);
