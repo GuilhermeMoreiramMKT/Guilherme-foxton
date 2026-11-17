@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Leveza em qualquer plano.",
+    "tag": "FIM DE SEMANA",
+    "category": "fim",
+    "desc": "Linho verde-oliva, tons de areia e um tênis claro. Textura e naturalidade para os dias sem pressa.",
+    "main": {
+      "name": "Camisa Manga Longa Linho Lumiar",
+      "url": "https://www.foxtonbrasil.com.br/camisa-manga-longa-linho-lumiar-verde-oliva-7-05579-2119/p",
+      "image": "https://foxton.vteximg.com.br/arquivos/ids/607002/705579_2119_2-CAMISA-ML-LINHO-LUMIAR.jpg?v=638779357531670000"
+    },
+    "extra": {
+      "name": "Short Puro Linho Píer",
+      "url": "https://www.foxtonbrasil.com.br/short-puro-linho-pier-verde-oliva-7-07469-2119/p",
+      "image": "https://foxton.vteximg.com.br/arquivos/ids/639364/707469_2119_2-SHORT-PURO-LINHO-PIER.jpg?v=639086869411830000"
+    },
+    "colors": [
+      "#7e8469",
+      "#cfb998",
+      "#e9e6df"
+    ]
+  },
+  {
+    "title": "O essencial bem resolvido.",
+    "tag": "DIA A DIA",
+    "category": "dia",
+    "desc": "Uma camiseta em tom camelo abre possibilidades. Combine com uma calça clara e deixe a simplicidade fazer o resto.",
+    "main": {
+      "name": "Camiseta Suedine Pima Classic",
+      "url": "https://www.foxtonbrasil.com.br/camiseta-suedine-pima-classic-camelo-7-07271-2216/p",
+      "image": "https://foxton.vteximg.com.br/arquivos/ids/625511/707271_2216_2-TSHIRT-SUEDINE-PIMA-CLASSIC.jpg?v=638937396276130000"
+    },
+    "extra": {
+      "name": "Calça Sarja Soft",
+      "url": "https://www.foxtonbrasil.com.br/calca-sarja-soft-branco-7-11334-0001/p",
+      "image": "https://foxton.vteximg.com.br/arquivos/ids/653591/711334_0001_2-CALCA-SARJA-SOFT.jpg?v=639250460310900000"
+    },
+    "colors": [
+      "#aa8c68",
+      "#efede6",
+      "#524c42"
+    ]
+  },
+  {
+    "title": "Casual, com presença.",
+    "tag": "TRABALHO",
+    "category": "trabalho",
+    "desc": "A calça clara renova o casual de trabalho. Complete com uma camisa lisa e ajuste o tom à sua rotina.",
+    "main": {
+      "name": "Calça Sarja Soft",
+      "url": "https://www.foxtonbrasil.com.br/calca-sarja-soft-branco-7-11334-0001/p",
+      "image": "https://foxton.vteximg.com.br/arquivos/ids/653591/711334_0001_2-CALCA-SARJA-SOFT.jpg?v=639250460310900000"
+    },
+    "extra": {
+      "name": "Camisa Manga Longa Linho Lumiar",
+      "url": "https://www.foxtonbrasil.com.br/camisa-manga-longa-linho-lumiar-verde-oliva-7-05579-2119/p",
+      "image": "https://foxton.vteximg.com.br/arquivos/ids/607002/705579_2119_2-CAMISA-ML-LINHO-LUMIAR.jpg?v=638779357531670000"
+    },
+    "colors": [
+      "#eeece5",
+      "#777e63",
+      "#c6ac89"
+    ]
+  }
+]
