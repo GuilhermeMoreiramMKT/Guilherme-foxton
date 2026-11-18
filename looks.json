@@ -47,21 +47,29 @@
     "category": "trabalho",
     "image": "/assets/look-trabalho-v1.webp",
     "imageAlt": "Look de trabalho com terno azul-marinho, camisa azul-clara e tênis branco",
-    "desc": "A calça clara renova o casual de trabalho. Complete com uma camisa lisa e ajuste o tom à sua rotina.",
-    "main": {
-      "name": "Calça Sarja Soft",
-      "url": "https://www.foxtonbrasil.com.br/calca-sarja-soft-branco-7-11334-0001/p",
-      "image": "https://foxton.vteximg.com.br/arquivos/ids/653591/711334_0001_2-CALCA-SARJA-SOFT.jpg?v=639250460310900000"
-    },
-    "extra": {
-      "name": "Camisa Manga Longa Linho Lumiar",
-      "url": "https://www.foxtonbrasil.com.br/camisa-manga-longa-linho-lumiar-verde-oliva-7-05579-2119/p",
-      "image": "https://foxton.vteximg.com.br/arquivos/ids/607002/705579_2119_2-CAMISA-ML-LINHO-LUMIAR.jpg?v=638779357531670000"
-    },
+    "desc": "Blazer e calça Flexa em azul-marinho, com camisa listrada azul-clara e tênis branco de couro. Uma combinação de alfaiataria casual para o escritório e reuniões.",
     "colors": [
       "#eeece5",
       "#777e63",
       "#c6ac89"
+    ],
+    "products": [
+      {
+        "name": "Blazer Flexa — Azul Marinho",
+        "url": "https://www.foxtonbrasil.com.br/blazer-flexa-azul-marinho-7-10637-0184/p"
+      },
+      {
+        "name": "Calça Flexa — Azul Marinho",
+        "url": "https://www.foxtonbrasil.com.br/calca-flexa-azul-marinho-7-10638-0184/p"
+      },
+      {
+        "name": "Camisa Manga Longa Listrada 24h 3.0 — Azul Claro",
+        "url": "https://www.foxtonbrasil.com.br/camisa-manga-longa-listrada-24h-3-0-azul-claro-7-10083-0580/p"
+      },
+      {
+        "name": "Tênis Couro Foxton — Branco",
+        "url": "https://www.foxtonbrasil.com.br/tenis-couro-foxton-branco-7-08508-0001/p"
+      }
     ]
   }
 ]
