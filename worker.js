@@ -31,6 +31,10 @@ export function extractOffers(html){
 export default {async fetch(request,env,ctx){
  const url=new URL(request.url);
  if(request.method!=='GET'&&request.method!=='HEAD')return new Response('Método não permitido',{status:405});
+ if(url.pathname==='/assets/look-trabalho-v1.webp'){
+  const bytes=request.method==='HEAD'?null:Uint8Array.from(atob(WORK_LOOK_BASE64),c=>c.charCodeAt(0));
+  return new Response(bytes,{headers:{'Content-Type':'image/webp','Cache-Control':'public, max-age=31536000, immutable','X-Content-Type-Options':'nosniff'}});
+ }
  if(url.pathname==='/assets/guilherme-moreira-v1.jpg'){
   const bytes=request.method==='HEAD'?null:Uint8Array.from(atob(PORTRAIT_BASE64),c=>c.charCodeAt(0));
   return new Response(bytes,{headers:{'Content-Type':'image/jpeg','Cache-Control':'public, max-age=31536000, immutable','X-Content-Type-Options':'nosniff'}});

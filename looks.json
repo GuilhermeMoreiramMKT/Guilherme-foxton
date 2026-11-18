@@ -45,6 +45,8 @@
     "title": "Casual, com presença.",
     "tag": "TRABALHO",
     "category": "trabalho",
+    "image": "/assets/look-trabalho-v1.webp",
+    "imageAlt": "Look de trabalho com terno azul-marinho, camisa azul-clara e tênis branco",
     "desc": "A calça clara renova o casual de trabalho. Complete com uma camisa lisa e ajuste o tom à sua rotina.",
     "main": {
       "name": "Calça Sarja Soft",

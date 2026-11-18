@@ -15,9 +15,11 @@ let page=fs.readFileSync('page.html','utf8').replace('SEARCH_DASHBOARD',dashboar
 for(const [name,svg] of Object.entries(icons))page=page.replaceAll('ICON_'+name,svg);
 fs.mkdirSync('dist/server',{recursive:true});
 const portrait=fs.readFileSync('assets/guilherme-moreira-v1.jpg.base64','utf8').trim();
-fs.writeFileSync('dist/server/index.js','const PORTRAIT_BASE64='+JSON.stringify(portrait)+';\nconst PAGE='+JSON.stringify(page)+';\n'+fs.readFileSync('daily-offers.js','utf8').replace(/^export /gm,'')+'\n'+fs.readFileSync('worker.js','utf8').replace(/^import .*;$/gm,''));
+const workLook=fs.readFileSync('assets/look-trabalho-v1.webp');
+fs.writeFileSync('dist/server/index.js','const PORTRAIT_BASE64='+JSON.stringify(portrait)+';\nconst WORK_LOOK_BASE64='+JSON.stringify(workLook.toString('base64'))+';\nconst PAGE='+JSON.stringify(page)+';\n'+fs.readFileSync('daily-offers.js','utf8').replace(/^export /gm,'')+'\n'+fs.readFileSync('worker.js','utf8').replace(/^import .*;$/gm,''));
 fs.writeFileSync('dist/index.html',page);
 fs.mkdirSync('dist/public/assets',{recursive:true});
 fs.writeFileSync('dist/public/index.html',page);
 fs.writeFileSync('dist/public/assets/guilherme-moreira-v1.jpg',Buffer.from(portrait,'base64'));
+fs.writeFileSync('dist/public/assets/look-trabalho-v1.webp',workLook);
 fs.writeFileSync('dist/public/robots.txt','User-agent: *\nAllow: /\nDisallow: /api/');
