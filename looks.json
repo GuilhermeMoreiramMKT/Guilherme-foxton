@@ -47,7 +47,7 @@
     "category": "trabalho",
     "image": "/assets/look-trabalho-v1.webp",
     "imageAlt": "Look de trabalho com terno azul-marinho, camisa azul-clara e tênis branco",
-    "desc": "Blazer e calça Flexa em azul-marinho, com camisa listrada azul-clara e tênis branco de couro. Uma combinação de alfaiataria casual para o escritório e reuniões.",
+    "desc": "Blazer Easy Tech New e Calça Urban Easy Tech em Azul Ink, com camisa listrada azul-clara e tênis branco de couro. Uma combinação de alfaiataria casual para o escritório e reuniões.",
     "colors": [
       "#eeece5",
       "#777e63",
@@ -55,12 +55,12 @@
     ],
     "products": [
       {
-        "name": "Blazer Flexa — Azul Marinho",
-        "url": "https://www.foxtonbrasil.com.br/blazer-flexa-azul-marinho-7-10637-0184/p"
+        "name": "Blazer Easy Tech New — Azul Ink",
+        "url": "https://foxtonbrasil.com.br/blazer-easy-tech-new-azul-ink-7-11207-00416/p"
       },
       {
-        "name": "Calça Flexa — Azul Marinho",
-        "url": "https://www.foxtonbrasil.com.br/calca-flexa-azul-marinho-7-10638-0184/p"
+        "name": "Calça Urban Easy Tech — Azul Ink",
+        "url": "https://foxtonbrasil.com.br/calca-urban-easy-tech-azul-ink-7-06928-00416/p"
       },
       {
         "name": "Camisa Manga Longa Listrada 24h 3.0 — Azul Claro",
